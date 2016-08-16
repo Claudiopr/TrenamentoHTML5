@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Estrutura switch</title>
+    <script>
+
+    function ResultadoMedia() {
+    var nota1 = Number(document.getElementById('nota1')).value;
+    var nota2 = Number(document.getElementById('nota2')).value;
+    var nota3 = Number(document.getElementById('nota3')).value;
+
+    var media parseInt(((nota1 + nota2 + nota3) / 3))
+    var resultado;
+
+    switch (media) {
+      case expression:
+      10: resultado = "Passou!";
+      break;
+      9: resultado = "Passou!";
+      break;
+      8: resultado = "Passou!";
+      break;
+      7:resultado = "Passou!";
+      break;
+      6:resultado = "Eeeeroooouuuu!";
+      break;
+      5:resultado = "Eeeeroooouuuu!";
+      break;
+      4:resultado = "Eeeeroooouuuu!";
+      break;
+      3:resultado = "Eeeeroooouuuu!"  ;
+        break;
+      default:
+      Resultado = "Não";
+
+    }
+    alert('Resultado '+resultado);
+
+ }
+    </script>
+
+  </head>
+  <body>
+    <input type="text" name="nota1" id="nota1">
+    <input type="text" name="nota2" id="nota2">
+    <input type="text" name="nota3" id="nota3">
+    <input type="button" value="Calcular" onclick="ResultadoMedia()">
+  </body>
+</html>
