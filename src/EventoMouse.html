@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Evento click</title>
+    <script>
+    function onMouseUP(){
+      document.getElementById('lampada').src = "acesa.gif";
+    }
+
+    function onMouseDown(){
+      document.getElementById('lampada').src = "apagada.gif";
+    }
+
+    </script>
+  </head>
+  <body>
+
+    <img src="apagada.gif" id=lampada onmouseover="onMouseUP()" onmouseout="onMouseDown()">
+
+
+
+  </body>
+</html>
