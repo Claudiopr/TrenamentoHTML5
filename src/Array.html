@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Array</title>
+
+        <script>
+
+            function adicionarCarro(){
+                carros.push(document.getElementById('codigo').value,
+                            document.getElementById('fabricante').value,
+                            document.getElementById('modelo').value);
+            }
+
+            function listarCarro(){
+                fLen = carros.length;
+                text = "";
+                for (i = 0; i < fLen; i++){
+                    text += carros[i];
+                }
+                alert(text);
+            }
+
+            var carros = [];
+
+        </script>
+    </head>
+    <body>
+
+        Código: <input type="text" value="" id="codigo">
+        Fabric: <input type="text" value="" id="fabricante">
+        Modelo: <input type="text" value="" id="modelo">
+
+        <input type="button" value="adicionar novo carro" onclick="adicionarCarro()" id="botao">
+        <input type="button" value="imprime array" onclick="listarCarro()">
+
+    </body>
+</html>
