@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>While</title>
+
+    <script>
+    function calcular() {
+    var indice =0;
+    var numero = document.getElementById('fator').value;
+    var texto = "tabuada\n";
+
+    while (indice <= document.getElementById('numero').value) {
+      texto += " "+ numero + " x " + indice + " = "+ (numero * indice) + "\n";
+      indice++;
+    }
+    alert(texto);
+   }
+    </script>
+  </head>
+  <body>
+
+  <input type="text" id="fator">
+  <input type="text" id="numero">
+  <input type="button" value="calcular" onclick="calcular()">
+
+  </body>
+</html>
